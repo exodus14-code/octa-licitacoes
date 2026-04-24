@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where python *)",
+      "Bash(where python3 *)",
+      "Bash(where node *)",
+      "Bash(where node.exe)",
+      "Read(//c/Program Files/**)",
+      "Bash(powershell -Command \"Get-Command node,python3,npx -ErrorAction SilentlyContinue | Select-Object Name,Source\")",
+      "Bash(powershell -Command \"Get-Command php,ruby,go,dotnet,wsl -ErrorAction SilentlyContinue | Select-Object Name,Source; ls 'C:\\\\Users\\\\osmar\\\\AppData\\\\Roaming\\\\npm' 2>/dev/null | head -5\")",
+      "Bash(wsl which *)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(where git *)",
+      "Bash(where netlify *)",
+      "WebFetch(domain:octa-licitacoes.netlify.app)",
+      "WebFetch(domain:pagespeed.web.dev)",
+      "Bash(curl -s \"https://octa-licitacoes.netlify.app/\" -o /tmp/site-check.html)",
+      "Read(//tmp/**)",
+      "Bash(curl -sI \"https://octa-licitacoes.netlify.app/\")"
+    ]
+  }
+}
