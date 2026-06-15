@@ -184,10 +184,6 @@
   #hero { min-height: 100vh; display: flex; align-items: center; padding: 150px 0 90px; position: relative; overflow: hidden; }
   #hero::before { content: ''; position: absolute; top: -200px; right: -300px; width: 720px; height: 720px; background: radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 70%); pointer-events: none; }
 
-  .hero-logo-badge { margin-bottom: 24px; }
-  .hero-logo-badge img { animation: slideInDown 0.8s cubic-bezier(.2,.8,.2,1); box-shadow: 0 8px 32px rgba(201,168,76,0.25); }
-  @keyframes slideInDown { from { opacity: 0; transform: translateY(-24px); } to { opacity: 1; transform: translateY(0); } }
-
   .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; background: rgba(201,168,76,0.08); border: 1px solid var(--border); padding: 8px 18px; border-radius: 40px; font-size: 13px; font-weight: 500; color: var(--gold2); letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 28px; }
   .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); display: inline-block; animation: pulse 2s infinite; }
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.8)} }
@@ -422,9 +418,6 @@
 <!-- ═══════════ HERO ═══════════ -->
 <section id="hero">
   <div class="container">
-    <div class="hero-logo-badge reveal">
-      <img src="https://raw.githubusercontent.com/exodus14-code/octa-licitacoes/main/LOGOOCTA.jpg" alt="Logo OCTA" style="width: 64px; height: 64px; border-radius: 10px; border: 2px solid var(--gold);">
-    </div>
     <div class="hero-eyebrow reveal"><span class="dot"></span> O maior comprador do Brasil é o governo</div>
     <h1 class="hero-title reveal">O Governo compra todos os dias de empresas como a sua. <em>Você está deixando dinheiro na mesa!</em></h1>
     <p class="hero-subtitle reveal">A OCTA torna-se seu setor de licitações completo, realizando todo o processo de licitatório por você — Sem os Custos e Encargos de todo um setor que você teria. <strong>Qualquer porte de empresa, qualquer segmento.</strong> Um canal de vendas previsível que seu concorrente já pode estar explorando.</p>
